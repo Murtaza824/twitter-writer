@@ -4,8 +4,9 @@ import buildspaceLogo from "../assets/buildspace-logo.png";
 import { useState } from "react";
 
 import { Analytics } from "@vercel/analytics/react";
+<Analytics debug={false} />;
 
-function MyApp({ Component, pageProps }) {
+function Home({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />
