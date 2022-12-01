@@ -6,12 +6,12 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const basePromptPrefix = `
+const generateAction = async (req, res) => {
+  const basePromptPrefix = `
 Take the content below and generate a twitter thread written in the style of Paul Graham. Make it feel like a story. Don't just list the points. Go deep into each one. Explain why.
 
 Content:
 `;
-const generateAction = async (req, res) => {
   // Run first prompt
   console.log(`API: ${basePromptPrefix}${req.body.userInput}\n`);
 
