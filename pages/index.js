@@ -3,18 +3,6 @@ import Image from "next/image";
 import buildspaceLogo from "../assets/buildspace-logo.png";
 import { useState } from "react";
 
-import { Analytics } from "@vercel/analytics/react";
-<Analytics debug={false} />;
-
-function Home({ Component, pageProps }) {
-  return (
-    <>
-      <Component {...pageProps} />
-      <Analytics />
-    </>
-  );
-}
-
 const Home = () => {
   const [userInput, setUserInput] = useState("");
   const onUserChangedText = (event) => {
