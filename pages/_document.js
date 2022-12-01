@@ -4,13 +4,8 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <meta property="og:title" content="GPT-3 Writer" key="title"/>
-        <meta property="og:description" content="build with buildspace" key="description"/>
-        <meta
-          property="og:image"
-          <link rel="icon" href="/favicon.ico" />
-
-        />
+        <meta property="og:title" content="Twitter Thread Generator" key="title"/>
+        <meta property="og:description" content="Say 'goodbye' to writers block to  " key="description"/>
         <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
       <body>
